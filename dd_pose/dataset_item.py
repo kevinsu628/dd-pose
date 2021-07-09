@@ -4,11 +4,12 @@ import numpy as np
 import imageio
 
 try:
-    from builtins import int # long integer in python2
+    from builtins import int  # long integer in python2
 except:
     pass
 
-dd_pose_data_dir = os.environ['DD_POSE_DATA_DIR']
+dd_pose_data_dir = "/home/lang/Data/project/DD-POSE"  # os.environ['DD_POSE_DATA_DIR']
+
 
 class StampedTransforms:
     def __init__(self, fp=None, transform_name=None):

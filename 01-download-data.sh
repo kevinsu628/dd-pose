@@ -50,5 +50,5 @@ function download_file()
 export -f download_file
 
 # download metadata first
-cat $DD_POSE_DIR/resources/download-file-names.txt | grep "metadata\|head-pose" | parallel -j 4 download_file {}
-cat $DD_POSE_DIR/resources/download-file-names.txt | parallel -j 4 download_file {}
+cat $DD_POSE_DIR/resources/download-file-names-short.txt | grep "metadata\|head-pose" | parallel -j 4 download_file {}
+cat $DD_POSE_DIR/resources/download-file-names-short.txt | parallel -j 4 download_file {}

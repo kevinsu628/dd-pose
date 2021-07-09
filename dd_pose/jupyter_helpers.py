@@ -1,5 +1,5 @@
 import PIL.Image
-from cStringIO import StringIO
+from io import StringIO
 import IPython.display
 
 def showimage(a):

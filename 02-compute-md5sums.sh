@@ -32,4 +32,4 @@ function compute_md5sum()
 # make function visible to gnu parallel
 export -f compute_md5sum
 
-cat $DD_POSE_DIR/resources/download-file-names.txt | parallel compute_md5sum {}
+cat $DD_POSE_DIR/resources/download-file-names-short.txt | parallel compute_md5sum {}

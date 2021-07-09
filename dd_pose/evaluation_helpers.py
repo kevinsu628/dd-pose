@@ -1,6 +1,6 @@
 import numpy as np
 import zipfile
-import StringIO
+from io import StringIO
 import os
 import json
 import pandas as pd
